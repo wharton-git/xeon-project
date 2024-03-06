@@ -1,17 +1,147 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "./index.scss";
- *   |         ^^^^^^^^^^^^^^
- *   '
- *   ..\styles\scss\main.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"./index.scss\";\d\a   \2502          ^^^^^^^^^^^^^^\a   \2575 \a   ..\\styles\\scss\\main.scss 1:9  root stylesheet";
+@font-face {
+  font-family: "gruppo";
+  src: url(./../fonts/Gruppo-Regular.ttf);
 }
+.boule-vert, #glass #btn-index, #boule8, #boule7, #boule6, #boule5, #boule4, #boule3, #boule2, #boule1 {
+  background: radial-gradient(#174D33, #0C7241);
+}
+
+#boule1 {
+  width: 323px;
+  height: 323px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.507);
+  right: 0;
+  transform: translate(80px, -90px);
+}
+
+#boule2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.507);
+  right: 300px;
+  top: 0px;
+}
+
+#boule3 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.507);
+  right: 300px;
+  top: 200px;
+}
+
+#boule4 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.507);
+  right: 10%;
+  bottom: 25%;
+}
+
+#boule5 {
+  width: 323px;
+  height: 323px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.507);
+  right: 37%;
+  top: 20%;
+}
+
+#boule6 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.507);
+  left: 20%;
+  top: 20%;
+}
+
+#boule7 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.507);
+  left: 30%;
+  bottom: 20%;
+  animation: flotte 8s ease infinite;
+}
+
+#boule8 {
+  width: 373px;
+  height: 373px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.507);
+  left: 0;
+  bottom: 0;
+  transform: translate(-80px, 90px);
+}
+
+#glass {
+  width: 60%;
+  height: 50%;
+  top: 25%;
+  left: 20%;
+  right: 20%;
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  text-align: center;
+}
+#glass div {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "gruppo";
+  color: white;
+  font-size: 3em;
+}
+#glass #btn-index {
+  color: white;
+  padding: 10px 20px;
+  font-family: "gruppo";
+  font-size: 1.5em;
+}
+
+@keyframes flotte {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(15px, 12px);
+  }
+  20% {
+    transform: translate(17px, 16px);
+  }
+  30% {
+    transform: translate(24px, 22px);
+  }
+  40% {
+    transform: translate(29px, 25px);
+  }
+  50% {
+    transform: translate(35px, 30px);
+  }
+  60% {
+    transform: translate(0, 0);
+  }
+  70% {
+    transform: translate(0, 0);
+  }
+  80% {
+    transform: translate(0, 0);
+  }
+  90% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/*# sourceMappingURL=Style.css.map */
