@@ -1,13 +1,13 @@
 import React from 'react'
-import Nav from './../pages/sports'
+import Nav from './navbar'
 
-function Sport() {
+function Club() {
     return (
         <div>
         <Nav />
-            SPORT
+            CLUB
         </div>
     )
 }
 
-export default Sport;
+export default Club;
