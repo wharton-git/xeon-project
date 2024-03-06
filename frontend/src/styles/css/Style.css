@@ -143,5 +143,47 @@
     transform: translate(0, 0);
   }
 }
+#navbar {
+  overflow: hidden;
+  position: fixed;
+  width: 100vw;
+  font-family: gruppo;
+  font-weight: bold;
+  background: transparent;
+}
+
+ul#navbar-nav {
+  display: flex;
+  text-align: center;
+  padding: 10px;
+}
+ul#navbar-nav div {
+  flex: 1;
+}
+ul#navbar-nav div li {
+  cursor: pointer;
+}
+
+#drop-div #dropdown {
+  background: gray;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#cadre {
+  height: 100%;
+  width: 60%;
+  right: -10%;
+  top: -40%;
+  border-radius: 140px;
+  position: fixed;
+  background: radial-gradient(#174D33, #0C7241);
+}
 
 /*# sourceMappingURL=Style.css.map */
