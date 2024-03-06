@@ -177,13 +177,68 @@ ul#navbar-nav div li {
 }
 
 #cadre {
-  height: 100%;
-  width: 60%;
-  right: -10%;
+  height: 110%;
+  width: 70%;
+  right: -15%;
   top: -40%;
   border-radius: 140px;
   position: fixed;
   background: radial-gradient(#174D33, #0C7241);
+}
+
+.cardw {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  top: 20%;
+  background: transparent;
+  font-family: gruppo;
+  overflow-y: scroll;
+}
+
+#firstTxt {
+  width: 50%;
+  font-size: 2rem;
+  text-align: center;
+  margin: 7%;
+}
+
+#firstTxt2 {
+  right: 10%;
+  color: white;
+  font-size: 1.5em;
+}
+
+#firstImg div {
+  width: 70%;
+  border-radius: 100px;
+  margin-top: 5%;
+}
+
+#ENIimg {
+  border-radius: 30px;
+}
+
+.content-info {
+  display: flex;
+  color: white;
+  margin-bottom: 10%;
+}
+.content-info .leftw {
+  margin: 0 5%;
+}
+.content-info .leftw img {
+  width: 60%;
+}
+.content-info .rightw {
+  width: 40%;
+  margin: 5%;
+}
+.content-info .rightw .title {
+  font-size: 1.5em;
+}
+.content-info .rightw .desc {
+  font-size: 1.2em;
 }
 
 /*# sourceMappingURL=Style.css.map */

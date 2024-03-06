@@ -1,0 +1,58 @@
+.cardw {
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    top:20%;
+    background: transparent;
+    font-family: gruppo;
+    overflow-y: scroll;
+}
+
+#firstTxt {
+    width: 50%;
+    font-size: 2rem;
+    text-align: center;
+    margin: 7%;
+}
+
+#firstTxt2 {
+    right: 10% ;
+    color: white;
+    font-size: 1.5em;
+}
+
+#firstImg {
+    div {
+        width: 70%;
+        border-radius: 100px;
+        margin-top: 5%;
+    }
+}
+
+#ENIimg {
+    border-radius: 30px;
+}
+
+.content-info {
+    display: flex;
+    color: white;
+    margin-bottom: 10%;
+    .leftw {
+        margin: 0 5%;
+        img {
+            width: 60%;
+        }
+    }
+
+    .rightw {
+        width: 40%;
+        margin: 5%;
+        .title {
+            font-size: 1.5em;
+        }
+
+        .desc {
+            font-size: 1.2em;
+        }
+    }
+}
