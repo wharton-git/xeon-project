@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react'
+import { useState } from 'react';
 import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
-import First from './first';
-import Sport from './sports'; // Assurez-vous que le nom du fichier est correctement orthographié
-import Club from './club';
-import Connex from './../pages/Connex.js'
+import './../styles/css/Style.css'
+import il1 from './../images/Illust (1).png';
+import il2 from './../images/Illustr2-removebg-preview.png';
 
-function Home() {
+
+function Guide ()  {
+
     const [isOpen, setIsOpen] = useState(false);
     const [isOpen2, setIsOpen2] = useState(false);
 
@@ -19,18 +21,18 @@ function Home() {
 
     return (
         <div>
-            <div className='bg-white h-screen absolute'>
-                <div className='bg-red-200 absolute -rotate-45' id='cadre'></div>
-                <nav className="" id='navbar'>
+                <div className='bg-white h-screen absolute'>
+                <div className='bg-red-200 absolute' id='cadre2'></div>
+            <nav className="" id='navbar'>
                     <ul className="" id='navbar-nav'>
                         <div>
                             <li className="nav-item">
-                                <Link to={'/home'}>ACCUEIL</Link>
+                                <Link to={'/home'} className='text-white'>ACCUEIL</Link>
                             </li>
                         </div>
 
                         <div id='drop-div'>
-                            <li className="" onClick={toggleDropdown}>
+                            <li className="text-white" onClick={toggleDropdown}>
                                 ACTIVITE {isOpen ? '▲' : '▼'}
                             </li>
                             {isOpen && (
@@ -49,12 +51,12 @@ function Home() {
                         </div>
 
                         <div>
-                            <li className="text-white">
+                            <li className="">
                                 <Link to={'/guide'}>GUIDE</Link>
                             </li>
                         </div>
                         <div id='drop-div'>
-                            <li className="text-white" onClick={toggleDropdown2}>
+                            <li className="" onClick={toggleDropdown2}>
                                 Option {isOpen2 ? '▲' : '▼'}
                             </li>
                             {isOpen2 && (
@@ -76,16 +78,31 @@ function Home() {
                         </div>
                     </ul>
                 </nav>
+                </div>
+
+            <div className='guide cardw'>
+            <div className='guide-title float-right'>
+                    <h1>Mention et Parcours</h1>
+                </div>
+    
+                <div className='guid-content'>
+                    <div className='g1'>
+                        
+                    </div>
+                    <div className='g2'>
+                        <img src={il1} className='img-guide'/>   
+                    </div>
+                    <div className='g3'>
+                        <img src={il2} className='img-guide'/>
+                    </div>
+                    <div className='g4'>
+                        4
+                    </div>
+                </div>
             </div>
-            <Routes>
-                <Route path="/" element={<First />} />
-                <Route path="/sport" element={<Sport />} />
-                <Route path="/club" element={<Club />} />
-                <Route path="/connex" element={<Connex />} />
-            </Routes>
 
         </div>
-    );
+    )
 }
 
-export default Home;
+export default Guide;

@@ -67,7 +67,6 @@
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.507);
   left: 30%;
   bottom: 20%;
-  animation: flotte 8s ease infinite;
 }
 
 #boule8 {
@@ -108,41 +107,56 @@
   font-size: 1.5em;
 }
 
-@keyframes flotte {
-  0% {
-    transform: translate(0, 0);
-  }
-  10% {
-    transform: translate(15px, 12px);
-  }
-  20% {
-    transform: translate(17px, 16px);
-  }
-  30% {
-    transform: translate(24px, 22px);
-  }
-  40% {
-    transform: translate(29px, 25px);
-  }
-  50% {
-    transform: translate(36px, 30px);
-  }
-  60% {
-    transform: translate(0, 0);
-  }
-  70% {
-    transform: translate(0, 0);
-  }
-  80% {
-    transform: translate(0, 0);
-  }
-  90% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
+#cadre2 {
+  height: 700px;
+  width: 700px;
+  left: -5%;
+  top: -80%;
+  border-radius: 70%;
+  position: fixed;
+  background: radial-gradient(#174D33, #0C7241);
 }
+
+.guide .guide-title {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 100px;
+}
+.guide .guide-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.guide .img-guide {
+  width: 400px;
+}
+.guide .g2 {
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+}
+.guide .g2 img {
+  width: 500px;
+}
+.guide .g3 {
+  position: absolute;
+  left: 100px;
+  bottom: 100px;
+}
+.guide .g3 img {
+  width: 400px;
+}
+
+.authe {
+  padding-top: 15%;
+}
+.authe .ggTitle {
+  margin: 20px;
+}
+.authe .ggAction {
+  margin: 20px;
+}
+
 #navbar {
   overflow: hidden;
   position: fixed;
@@ -253,6 +267,107 @@ ul#navbar-nav div li {
 }
 .content-info .rightw .desc {
   font-size: 1.2em;
+}
+
+.logContainer {
+  display: flex;
+  width: 80%;
+  font-family: gruppo;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.logContainer .logContentRight {
+  border: 2px grey solid;
+  border-radius: 20px;
+  margin: 40px 50px;
+  width: 45%;
+}
+
+.fchatContent {
+  margin: 0 auto;
+  font-family: gruppo;
+  font-size: 1.2em;
+}
+
+.fondFchat {
+  background: linear-gradient(to bottom right, #086508, #1c861c, rgb(194, 191, 191));
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+.glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.1px);
+  -webkit-backdrop-filter: blur(3.1px);
+  padding: 20px 40px;
+}
+
+.backChat {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 5%;
+  background-image: url("./../../images/429876533_321412127596142_7614791350315477473_n.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.chat-app {
+  /* From https://css.glass */
+  background: rgba(36, 69, 20, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.1px);
+  -webkit-backdrop-filter: blur(3.1px);
+  font-family: gruppo;
+  margin: 0 auto;
+  color: white;
+  width: 30vw;
+  height: 80vh;
+  position: ablsolute;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+}
+.header span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.messages .user {
+  font-size: medium;
+  margin-left: 10px;
+}
+.messages h1 {
+  background: white;
+  color: black;
+  font-weight: bold;
+  width: max-content;
+  padding: 3px 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.new-message-form {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.new-message-form .new-message-input {
+  color: black;
+  font-weight: bold;
+  border-radius: 15Px;
+  width: 70%;
 }
 
 /*# sourceMappingURL=Style.css.map */

@@ -71,7 +71,6 @@
     left: 30%;
     bottom: 20%;
     @extend .boule-vert;
-    animation: flotte 8s ease infinite;
 }
 
 #boule8 {
@@ -118,38 +117,61 @@
     }
 }
 
-@keyframes flotte {
-    0% {
-        transform: translate(0, 0);
+
+#cadre2 {
+    height: 700px;
+    width: 700px;
+    left: -5%;
+    top: -80%;
+    border-radius: 70%;
+    position: fixed;
+    background: radial-gradient(#174D33, #0C7241);
+  }
+
+.guide {
+    
+    .guide-title {
+        font-size: 2em;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-right: 100px;
     }
-    10% {
-        transform: translate(15px, 12px);
+    
+    .guide-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
-    20% {
-        transform: translate(17px, 16px);
+
+    .img-guide {
+        width: 400px;
     }
-    30% {
-        transform: translate(24px, 22px);
+
+    .g2 {
+        position: absolute;
+        right: 0;
+        bottom: 100px;
+        img {
+            width: 500px;
+        }
     }
-    40% {
-        transform: translate(29px, 25px);
+
+    .g3 {
+        position: absolute;
+        left: 100px;
+        bottom: 100px;
+        img {
+            width: 400px;
+        }
     }
-    50% {
-        transform: translate(36px, 30px);
+}
+
+.authe {
+        padding-top: 15%;    
+    .ggTitle {
+        margin: 20px;
     }
-    60% {
-        transform: translate(0, 0);
-    }
-    70% {
-        transform: translate(0, 0);
-    }
-    80% {
-        transform: translate(0, 0);
-    }
-    90% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(0, 0);
+
+    .ggAction {
+        margin: 20px;
     }
 }

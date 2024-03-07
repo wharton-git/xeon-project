@@ -4,9 +4,14 @@ import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
 function Nav () {
 
     const [isOpen, setIsOpen] = useState(false);
+    const [isOpen2, setIsOpen2] = useState(false);
 
     const toggleDropdown = () => {
-    setIsOpen(!isOpen);
+        setIsOpen(!isOpen);
+    };
+
+    const toggleDropdown2 = () => {
+        setIsOpen2(!isOpen2);
     };
 
     return (
@@ -41,14 +46,30 @@ function Nav () {
 
             <div>
             <li className="text-white">
-                <Link to={'/'}>SECTION</Link>
+                <Link to={'/guide'}>GUIDE</Link>
             </li>
             </div>
-            <div>
-            <li className="text-white">
-                <Link to={'/'}>AIDE</Link>
-            </li>
-            </div>
+            <div id='drop-div'>
+                            <li className="text-white" onClick={toggleDropdown2}>
+                                Option {isOpen2 ? '▲' : '▼'}
+                            </li>
+                            {isOpen2 && (
+                                <div className="" id='dropdown'>
+                                    <Link to={{ pathname: '/connex' }} className="dropdown-item">
+                                        Se Connecter
+                                    </Link>
+                                    <Link to={'/club'} className="dropdown-item">
+                                        Aide
+                                    </Link>
+                                    <Link to={'/chat'} className="dropdown-item">
+                                        Salon
+                                    </Link>
+                                    <a href='http://localhost/DEVHUNT-WIN_INIT/' className="dropdown-item">
+                                        Forum
+                                    </a>
+                                </div>
+                            )}
+                        </div>
         </ul>
         </nav>
         </div>

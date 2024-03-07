@@ -1,0 +1,94 @@
+.fchatContent {
+    margin: 0 auto;
+    font-family: gruppo;
+    font-size: 1.2em;
+
+}
+
+.fondFchat {
+    background: linear-gradient(to bottom right,#086508, #1c861c, rgb(194, 191, 191));
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.glass {
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.7);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.1px);
+-webkit-backdrop-filter: blur(3.1px);
+    padding: 20px 40px;
+}
+
+.backChat {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    top:  0;
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 5%;
+    background-image: url('./../../images/429876533_321412127596142_7614791350315477473_n.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.chat-app {
+    /* From https://css.glass */
+background: rgba(36, 69, 20, 0.7);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.1px);
+-webkit-backdrop-filter: blur(3.1px);
+font-family: gruppo;
+margin: 0 auto;
+color: white;
+width: 30vw;
+height: 80vh;
+position: ablsolute;
+overflow: hidden;
+}
+
+
+
+.header {
+    text-align: center;
+    span {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+.messages {
+    .user {
+        font-size: medium;
+        margin-left: 10px;
+    }
+
+    h1 {
+        background: white;
+        color: black;
+        font-weight: bold;
+        width: max-content;
+        padding: 3px 10px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+}
+
+.new-message-form {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+    .new-message-input {
+        color: black;
+        font-weight: bold;
+        border-radius: 15Px;
+        width: 70%;
+    }
+}

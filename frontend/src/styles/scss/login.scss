@@ -1,0 +1,19 @@
+.logContainer {
+    display: flex;
+    width: 80%;
+    font-family: gruppo;
+    font-weight: bold;
+    letter-spacing: 5px;
+    .logContentLeft {
+    
+    }
+
+    .logContentRight {
+        border: 2px grey solid;
+        border-radius: 20px;
+        margin: 40px 50px;
+        width: 45% ;
+    }
+
+
+}
