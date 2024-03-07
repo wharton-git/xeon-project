@@ -8,6 +8,20 @@
     overflow-y: scroll;
 }
 
+.cardw::-webkit-scrollbar {
+    background-color:white;
+    border-radius: 10px;
+}
+
+.cardw::-webkit-scrollbar-button {
+    display: none;
+}
+
+.cardw::-webkit-scrollbar-thumb {
+    background: $greens;
+    border-radius: 10px;
+}
+
 #firstTxt {
     width: 50%;
     font-size: 2rem;

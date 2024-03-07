@@ -29,7 +29,7 @@ function Nav () {
                 <Link to={'/sport'} className="dropdown-item">
                     SPORT
                 </Link>
-                <Link to={'/'} className="dropdown-item">
+                <Link to={'/club'} className="dropdown-item">
                     CLUB
                 </Link>
                 <Link to={'/'} className="dropdown-item">

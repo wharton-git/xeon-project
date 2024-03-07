@@ -196,6 +196,20 @@ ul#navbar-nav div li {
   overflow-y: scroll;
 }
 
+.cardw::-webkit-scrollbar {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.cardw::-webkit-scrollbar-button {
+  display: none;
+}
+
+.cardw::-webkit-scrollbar-thumb {
+  background: radial-gradient(#174D33, #0C7241);
+  border-radius: 10px;
+}
+
 #firstTxt {
   width: 50%;
   font-size: 2rem;
