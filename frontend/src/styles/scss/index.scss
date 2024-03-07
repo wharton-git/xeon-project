@@ -1,0 +1,155 @@
+.boule-vert {
+    background: radial-gradient(#174D33, #0C7241);
+}
+
+#boule1 {
+    width: 323px;
+    height: 323px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.507);
+    right: 0;
+    transform: translate(80px, -90px);
+    @extend .boule-vert;
+}
+
+#boule2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.507);
+    right: 300px;
+    top: 0px;
+    @extend .boule-vert;
+}
+
+#boule3 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.507);
+    right: 300px;
+    top: 200px;
+    @extend .boule-vert;
+
+}
+
+#boule4 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.507);
+    right: 10%;
+    bottom: 25%;
+    @extend .boule-vert;
+}
+
+#boule5 {
+    width: 323px;
+    height: 323px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.507);
+    right: 37%;
+    top: 20%;
+    @extend .boule-vert;
+}
+
+#boule6 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.507);
+    left: 20%;
+    top: 20%;
+    @extend .boule-vert;
+}
+
+#boule7 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.507);
+    left: 30%;
+    bottom: 20%;
+    @extend .boule-vert;
+    animation: flotte 8s ease infinite;
+}
+
+#boule8 {
+    width: 373px;
+    height: 373px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.507);
+    left: 0;
+    bottom: 0;
+    transform: translate(-80px, 90px);
+    @extend .boule-vert;
+}
+
+#glass {
+    width: 60%;
+    height: 50%;
+    top: 25%;
+    left: 20%;
+    right: 20%;
+/* From https://css.glass */
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+
+    text-align: center;
+
+
+    div {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-family: "gruppo";
+        color: white;
+        font-size: 3em;
+    }
+
+    #btn-index {
+        @extend .boule-vert;
+        color: white;
+        padding: 10px 20px;
+        font-family: "gruppo";
+        font-size: 1.5em;
+    }
+}
+
+@keyframes flotte {
+    0% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(15px, 12px);
+    }
+    20% {
+        transform: translate(17px, 16px);
+    }
+    30% {
+        transform: translate(24px, 22px);
+    }
+    40% {
+        transform: translate(29px, 25px);
+    }
+    50% {
+        transform: translate(36px, 30px);
+    }
+    60% {
+        transform: translate(0, 0);
+    }
+    70% {
+        transform: translate(0, 0);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+    90% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}

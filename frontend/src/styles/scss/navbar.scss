@@ -1,0 +1,37 @@
+#navbar {
+    overflow: hidden;
+    position: fixed;
+    width: 100vw;
+    font-family: gruppo;
+    font-weight: bold;
+    background: transparent;
+
+}
+
+ul#navbar-nav {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    div{
+        flex: 1;
+
+        li {
+            cursor: pointer ;
+        }
+    }
+}
+
+#drop-div {
+
+    #dropdown {
+        background: gray;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        width: 60%;
+        margin: 0 auto;
+    }
+}
